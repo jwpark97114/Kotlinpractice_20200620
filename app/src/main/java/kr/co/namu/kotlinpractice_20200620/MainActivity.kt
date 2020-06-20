@@ -19,11 +19,28 @@ class MainActivity : AppCompatActivity() {
             val inputMessage = messageEdt.text.toString()
 
 //            기록된 내용을 토스트로 출력
-            Toast.makeText(this, inputMessage, Toast.LENGTH_SHORT).show()
+//            Toast.makeText(this, inputMessage, Toast.LENGTH_SHORT).show()
+
 
 //            출력용 텍스트뷰에 입력한 내용을 그대로 반영
 //            resultTxt의 text값을 set
             resultTxt.text = inputMessage
+
+            if(inputMessage == "Hello"){
+//                조건문 검사 결과가 true 일때만 실행되는 영역
+                Toast.makeText(this,"인사입니다",Toast.LENGTH_SHORT).show()
+            }
+            else if (inputMessage == "Hi"){
+                Toast.makeText(this,"다른 인사입니다.",Toast.LENGTH_SHORT).show()
+
+            }
+            else if (inputMessage == "bye"){
+                Toast.makeText(this,"작별 인사",Toast.LENGTH_SHORT).show()
+            }
+            else {
+//                위 어느 경우에도 해당하지 않는 경우
+                Toast.makeText(this,"그 외의 메세지입니다.", Toast.LENGTH_SHORT).show()
+            }
         }
 
 
