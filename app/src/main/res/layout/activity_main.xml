@@ -9,10 +9,12 @@
     tools:context=".MainActivity">
 
     <EditText
+        android:id="@+id/messageEdt"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="메세지 입력"/>
     <Button
+        android:id="@+id/okBtn"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="입력완료"/>
