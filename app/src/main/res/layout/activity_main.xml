@@ -19,6 +19,7 @@
         android:layout_height="wrap_content"
         android:text="입력완료"/>
     <TextView
+        android:id="@+id/resultTxt"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:text="입력한 내용을 출력한다"
